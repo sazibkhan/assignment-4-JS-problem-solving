@@ -50,3 +50,19 @@ function picnicBudget(peoples) {
 }
 
 console.log("Total Picnic Budget :" + picnicBudget(305));
+
+
+
+//Question :4 
+function oddFriend(friends) {
+    let oddFriendArray = []
+    for (const friend of friends) {
+        if (friend.length % 2 == 1) {
+            oddFriendArray.push(friend);
+        }
+    }
+    return oddFriendArray[0];
+}
+
+let friendsName = ['Sazib Khan', 'Sakil', 'Nusrat', 'Mamum', 'Sakib', 'yahuda', 'muhaiminul', 'rafiq', 'rafi', 'rafid'];
+console.log(oddFriend(friendsName));
